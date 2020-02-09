@@ -1,0 +1,20 @@
+// combineReducers可以把小的reducer合并成大的reducer
+// import { combineReducers } from 'redux';
+import { combineReducers } from 'redux-immutable';
+// import headerReducer from '../common/header/store/reducer';
+import { reducer as headerReducer } from '../common/header/store';
+import { reducer as homeReducer } from '../pages/home/store';
+import { reducer as detailReducer } from '../pages/detail/store';
+import { reducer as loginReducer } from '../pages/login/store';
+// export default combineReducers({
+//     header: headerReducer
+// })
+
+const reducer = combineReducers({
+    header: headerReducer,
+    home: homeReducer,
+    detail: detailReducer,
+    login: loginReducer
+});
+
+export default reducer;
