@@ -6,6 +6,7 @@ import { CSSTransition } from 'react-transition-group';
 
 // import * as actionCreators from './store/actionCreators';
 import { actionCreators } from './store';
+
 import { actionCreators as loginActionCreators } from '../../pages/login/store';
 import {
 	HeaderWrapper,
