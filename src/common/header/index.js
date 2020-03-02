@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { GlobalStyled } from '../../statics/iconfont/iconfont';
 import { CSSTransition } from 'react-transition-group';
+
 // import * as actionCreators from './store/actionCreators';
 import { actionCreators } from './store';
 import { actionCreators as loginActionCreators } from '../../pages/login/store';
